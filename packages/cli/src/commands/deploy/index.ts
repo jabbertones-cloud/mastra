@@ -1398,7 +1398,8 @@ export async function pollEnvironmentDeploy(
           return resp.status === 401 ? undefined : (JSON.parse(body) as { deploy: UnifiedDeployStatus });
         },
         {
-          maxRetries: Infinity,
+          // Bound consecutive poll error retries instead of spinning infinitely when the gateway hangs
+          maxRetries: Math.min(60, Math.max(1, Math.floor(maxWaitMs / 10_000))),
           initialDelayMs: 2000,
           maxDelayMs: 30_000,
           shouldRetry: error => error instanceof RetryableDeployPollError,
