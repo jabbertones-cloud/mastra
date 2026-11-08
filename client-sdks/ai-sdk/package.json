@@ -51,12 +51,10 @@
     "@mastra/memory": "workspace:*",
     "@rspack/core": "^2.3.0",
     "@types/json-schema": "^7.0.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "scripts": {
@@ -64,8 +62,7 @@
     "lint:fix": "oxlint --type-aware --fix .",
     "build:lib": "tsdown --silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
-    "build:patch-commonjs": "node ../../scripts/commonjs-tsc-fixer.js",
-    "test": "vitest run"
+    "build:patch-commonjs": "node ../../scripts/commonjs-tsc-fixer.js"
   },
   "keywords": [
     "mastra",

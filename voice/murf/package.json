@@ -25,7 +25,6 @@
     "build": "tsdown --silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -35,12 +34,10 @@
     "@internal/types-builder": "workspace:*",
     "@internal/voice": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "zod": "^3.25.0 || ^4.0.0"

@@ -23,8 +23,6 @@
     "build:lib": "pnpm build",
     "build:watch": "pnpm build --watch",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -38,10 +36,8 @@
     "@internal/types-builder": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.55.0-0 <2.0.0-0"

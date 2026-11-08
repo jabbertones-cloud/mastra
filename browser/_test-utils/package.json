@@ -16,7 +16,6 @@
     "vitest": "*"
   },
   "devDependencies": {
-    "@mastra/core": "workspace:*",
-    "vitest": "catalog:"
+    "@mastra/core": "workspace:*"
   }
 }

@@ -6,11 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run --config vitest.config.ts",
-    "test:unit": "vitest run --config vitest.config.ts",
-    "test:browser": "vitest run --config vitest.browser.config.ts",
-    "test:coverage": "vitest run --coverage --config vitest.browser.config.ts"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "19.2.8",

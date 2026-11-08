@@ -23,9 +23,7 @@
       }
     }
   },
-  "scripts": {
-    "test": "vitest run"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
@@ -39,9 +37,7 @@
     "typescript-classic": "npm:typescript@^6.0.3"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   }
 }

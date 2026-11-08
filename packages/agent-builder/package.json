@@ -25,8 +25,7 @@
     "check": "tsc --noEmit",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix .",
-    "build": "tsdown --silent --config tsdown.config.ts",
-    "test": "vitest run"
+    "build": "tsdown --silent --config tsdown.config.ts"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^1.2.12",
@@ -49,12 +48,10 @@
     "@internal/types-builder": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "ai-v5": "npm:ai@5.0.283",
     "tsdown": "0.23.1",
     "typescript": "catalog:ts6",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "peerDependencies": {

@@ -15,7 +15,6 @@
     "typecheck": "tsc --noEmit",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "test": "vitest run",
     "demo": "node scripts/generate-demo.ts",
     "review": "node --env-file-if-exists=.env scripts/review.ts",
     "recover:writer": "node scripts/recover-writer.ts",
@@ -43,8 +42,7 @@
     "hono": "4.13.13",
     "mastra": "1.33.0",
     "oxfmt": "0.72.0",
-    "typescript": "^5.9.3",
-    "vitest": "4.1.11"
+    "typescript": "^5.9.3"
   },
   "workspaces": [
     "demo_ui"

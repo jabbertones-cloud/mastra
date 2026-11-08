@@ -1,7 +1,7 @@
 {
   "name": "@mastra/quickjs",
   "version": "0.1.5",
-  "description": "In-process WebAssembly Code Mode transport for Mastra, backed by QuickJS — no native binaries and no Node flags required",
+  "description": "In-process WebAssembly Code Mode transport for Mastra, backed by QuickJS \u2014 no native binaries and no Node flags required",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,8 +23,6 @@
     "build:lib": "pnpm build",
     "build:watch": "pnpm build --watch",
     "typecheck": "tsc --noEmit",
-    "test": "pnpm build && vitest run",
-    "test:watch": "vitest watch",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -38,10 +36,8 @@
     "@internal/types-builder": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "tsdown": "0.23.1",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "peerDependencies": {

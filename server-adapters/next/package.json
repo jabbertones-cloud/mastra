@@ -1,7 +1,7 @@
 {
   "name": "@mastra/next",
   "version": "0.2.41-alpha.1",
-  "description": "Mastra Next.js server adapter — drop your Mastra instance into a Next.js app",
+  "description": "Mastra Next.js server adapter \u2014 drop your Mastra instance into a Next.js app",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,6 @@
   "scripts": {
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "pnpm build --watch",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -39,8 +38,7 @@
     "@types/node": "22.19.15",
     "hono": "^4.13.13",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.80.0-0 <2.0.0-0",

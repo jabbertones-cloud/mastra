@@ -3,7 +3,6 @@
   "version": "1.1.42-alpha.1",
   "description": "LongMemEval benchmark implementation for Mastra Memory",
   "scripts": {
-    "test": "vitest",
     "typecheck": "tsc --noEmit",
     "generate-embeddings": "tsx scripts/generate-embeddings.ts",
     "setup": "tsx scripts/setup.ts",
@@ -53,11 +52,9 @@
   },
   "devDependencies": {
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "engines": {
     "node": ">=22.13.0"

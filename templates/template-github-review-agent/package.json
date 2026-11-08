@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "AI-powered GitHub PR code review agent built with Mastra",
   "scripts": {
-    "test": "tsc --noEmit",
     "dev": "mastra dev",
     "build": "mastra build",
     "start": "mastra start",

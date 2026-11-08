@@ -38,9 +38,7 @@
     "generate:route-types": "pnpm --filter @mastra/server generate:route-types",
     "build:lib": "tsdown --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
-    "dev": "pnpm generate:route-types && pnpm build:lib --watch",
-    "test": "vitest",
-    "test:unit": "vitest run"
+    "dev": "pnpm generate:route-types && pnpm build:lib --watch"
   },
   "dependencies": {
     "@lukeed/uuid": "^2.0.1",
@@ -60,12 +58,10 @@
     "@internal/types-builder": "workspace:*",
     "@types/json-schema": "^7.0.15",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "engines": {

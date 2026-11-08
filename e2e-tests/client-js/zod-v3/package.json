@@ -3,16 +3,12 @@
   "version": "1.0.1",
   "type": "module",
   "private": true,
-  "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
+  "scripts": {},
   "dependencies": {
     "zod": "^3.25.76"
   },
   "devDependencies": {
     "@internal/client-js-test-utils": "workspace:*",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   }
 }

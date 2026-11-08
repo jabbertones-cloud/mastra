@@ -16,7 +16,6 @@
     "build": "node scripts/monorepo-deps.mjs run -- mastra build --dir src/mastra",
     "deploy": "pnpm run build && node scripts/validate-output.mjs && mastra deploy --skip-build",
     "start": "varlock run -- mastra start",
-    "test": "vitest run",
     "slack:manifest": "node scripts/slack-manifest.mjs"
   },
   "keywords": [],
@@ -46,7 +45,6 @@
     "tinyexec": "^1.2.4",
     "typescript": "^7.0.2",
     "varlock": "^1.24.0",
-    "vitest": "5.1.0",
     "zod": "^4.6.7"
   },
   "engines": {

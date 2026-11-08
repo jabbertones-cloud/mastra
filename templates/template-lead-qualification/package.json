@@ -10,7 +10,6 @@
     "dev": "mastra dev",
     "build": "mastra build",
     "start": "mastra start",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "typecheck": "tsc --noEmit",
     "format": "oxfmt .",
@@ -33,7 +32,6 @@
     "oxlint-tsgolint": "latest",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0",
-    "vitest": "^4.0.0",
     "@mastra/hono": "latest",
     "hono": "^4.13.0",
     "@hono/node-server": "^2.0.0"

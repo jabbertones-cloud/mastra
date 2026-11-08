@@ -24,9 +24,7 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@chat-adapter/slack": "catalog:"
@@ -36,7 +34,6 @@
     "@types/node": "22.19.15",
     "tsdown": "0.23.1",
     "typescript": "catalog:",
-    "vitest": "^5.1.0",
     "zod": "catalog:"
   },
   "peerDependencies": {

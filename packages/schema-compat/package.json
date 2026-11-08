@@ -84,7 +84,6 @@
   "scripts": {
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -118,14 +117,12 @@
     "@standard-schema/spec": "^1.1.0",
     "@types/json-schema": "^7.0.15",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "ajv": "^8.20.0",
     "arktype": "^2.2.9",
     "json-schema-traverse": "^1.0.0",
     "tsdown": "0.23.1",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:",
     "zod-from-json-schema-v3": "npm:zod-from-json-schema@^0.0.5",
     "zod-to-json-schema": "^3.25.2",

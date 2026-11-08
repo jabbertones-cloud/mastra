@@ -24,7 +24,6 @@
   "scripts": {
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -38,13 +37,11 @@
     "@mastra/agent-browser": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "agent-browser": "0.19.0",
     "playwright-core": "^1.64.1",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/agent-browser": ">=0.3.0 <1.0.0",

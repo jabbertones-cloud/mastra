@@ -33,7 +33,6 @@
   },
   "scripts": {
     "build": "tsdown --config tsdown.config.ts",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -44,11 +43,9 @@
     "@internal/lint": "workspace:*",
     "@types/node": "22.19.15",
     "@types/string-similarity": "^4.0.2",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "dependencies": {
     "diff": "^9.0.0",

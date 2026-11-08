@@ -22,8 +22,6 @@
     "build:lib": "tsdown --silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
-    "test": "vitest run && pnpm test:memory",
-    "test:memory": "LIBSQL_TEST_URL=:memory: vitest run src/storage/index.test.ts src/vector/index.test.ts",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -40,12 +38,10 @@
     "@mastra/core": "workspace:*",
     "@mastra/pg": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.83.0-0 <2.0.0-0"

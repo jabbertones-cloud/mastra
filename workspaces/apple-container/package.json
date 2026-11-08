@@ -22,11 +22,6 @@
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:lib": "pnpm build",
     "build:watch": "pnpm build --watch",
-    "test:unit": "vitest run --exclude '**/*.integration.test.ts'",
-    "test:watch": "vitest watch",
-    "test:integration": "vitest run ./src/**/*.integration.test.ts",
-    "test": "pnpm test:unit && pnpm test:integration",
-    "test:cloud": "pnpm test:integration",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -37,12 +32,10 @@
     "@internal/workspace-test-utils": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "dotenv": "^18.0.9",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.12.0-0 <2.0.0-0"

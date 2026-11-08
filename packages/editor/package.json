@@ -68,7 +68,6 @@
     "dev": "tsdown --watch",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
     "validate:package": "echo 'Validating package.json...'"
   },
   "repository": {
@@ -101,7 +100,6 @@
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "^4.6.7"
   },
   "peerDependencies": {

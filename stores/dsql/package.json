@@ -21,9 +21,6 @@
   "scripts": {
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "pnpm build --watch",
-    "test": "vitest run",
-    "test:perf": "NODE_OPTIONS='--max-old-space-size=16384' vitest run -c vitest.perf.config.ts",
-    "test:watch": "vitest watch",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -41,11 +38,9 @@
     "@microsoft/api-extractor": "catalog:",
     "@types/node": "22.19.15",
     "@types/pg": "^8.23.1",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.76.0-0 <2.0.0-0"

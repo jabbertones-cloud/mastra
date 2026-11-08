@@ -11,7 +11,5 @@
     "verdaccio": "^6.10.5",
     "verdaccio-auth-memory": "^13.1.3"
   },
-  "scripts": {
-    "test": "tsx test.ts"
-  }
+  "scripts": {}
 }

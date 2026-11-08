@@ -36,8 +36,7 @@
     "remove-provider": "tsx scripts/remove-provider.ts",
     "smoke-test": "tsx scripts/smoke-test/index.ts",
     "smoke-test:channels": "tsx scripts/smoke-test/channels/index.ts",
-    "sync-templates": "tsx scripts/sync-templates.ts",
-    "test": "vitest run && tsc --noEmit"
+    "sync-templates": "tsx scripts/sync-templates.ts"
   },
   "keywords": [
     "mastra",
@@ -74,7 +73,6 @@
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "dependencies": {

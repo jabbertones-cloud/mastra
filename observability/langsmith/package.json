@@ -24,8 +24,6 @@
   "scripts": {
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "pnpm build --watch",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -41,12 +39,10 @@
     "@mastra/core": "workspace:*",
     "@observability/test-utils": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "dotenv": "^18.0.9",
     "tsdown": "0.23.1",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "peerDependencies": {

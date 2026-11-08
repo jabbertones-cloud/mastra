@@ -13,8 +13,6 @@
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown --silent --config tsdown.config.ts",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
     "typecheck": "tsc --noEmit --incremental",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix .",
@@ -38,11 +36,9 @@
     "@types/debug": "^4.1.13",
     "@types/jscodeshift": "^17.3.0",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
-    "typescript": "catalog:ts6",
-    "vitest": "catalog:"
+    "typescript": "catalog:ts6"
   },
   "homepage": "https://mastra.ai",
   "repository": {

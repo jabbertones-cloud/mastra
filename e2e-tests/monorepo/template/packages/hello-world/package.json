@@ -8,9 +8,7 @@
     ".": "./src/index.ts",
     "./agent": "./src/agent/index.ts"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",

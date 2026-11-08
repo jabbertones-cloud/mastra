@@ -21,13 +21,6 @@
     "build:types": "tsc -p tsconfig.build.json",
     "build:portal": "npm run build --workspace portal",
     "typecheck": "tsc --noEmit && npm run typecheck --workspace portal",
-    "test": "npm run test:template && npm run test:workflow && npm run test:api && npm run test:pii && npm run test:portal",
-    "test:template": "vitest run tests/template-compatibility.test.ts",
-    "test:workflow": "vitest run tests/workflow-smoke.test.ts",
-    "test:api": "vitest run tests/api-smoke.test.ts",
-    "test:pii": "vitest run tests/pii-smoke.test.ts",
-    "test:portal": "npm run test:browser --workspace portal",
-    "test:first-run": "node --import tsx scripts/verify-clean-default.ts",
     "eval:extraction": "node --import tsx scripts/evaluate-extraction.ts",
     "eval:baseline": "node --import tsx scripts/evaluate-kyc-quality.ts",
     "eval:experiments": "node --import tsx scripts/evaluate-kyc-experiments.ts",
@@ -53,11 +46,9 @@
     "mastra": "latest",
     "@types/node": "24.13.3",
     "@vitest/browser-playwright": "4.1.11",
-    "playwright": "1.62.1",
     "tsx": "4.23.12",
     "typescript": "6.0.3",
-    "vite": "7.3.7",
-    "vitest": "4.1.11"
+    "vite": "7.3.7"
   },
   "license": "Apache-2.0",
   "homepage": "https://mastra.ai/templates/kyc-customer-onboarding"

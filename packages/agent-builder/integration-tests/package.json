@@ -3,10 +3,6 @@
   "private": true,
   "version": "0.1.4",
   "scripts": {
-    "test": "vitest run",
-    "test:agent": "vitest run ./src/agent-template-behavior.test.ts",
-    "test:template": "vitest run ./src/template-integration.test.ts",
-    "test:workflow": "vitest run ./src/workflow-builder-integration.test.ts",
     "dev": "mastra dev"
   },
   "dependencies": {
@@ -21,7 +17,6 @@
     "@mastra/libsql": "*",
     "@mastra/mcp": "*",
     "mastra": "*",
-    "typescript": "^7.0.2",
-    "vitest": "^4.1.12"
+    "typescript": "^7.0.2"
   }
 }

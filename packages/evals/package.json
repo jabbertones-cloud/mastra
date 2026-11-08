@@ -85,7 +85,6 @@
     "build:lib": "pnpm check && tsdown --silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "pnpm build:lib --watch",
-    "test": "vitest",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -119,13 +118,11 @@
     "@mastra/core": "workspace:*",
     "@types/sentiment": "^5.0.4",
     "@types/string-similarity": "^4.0.2",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "dotenv": "^18.0.9",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "engines": {

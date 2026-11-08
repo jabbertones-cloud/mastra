@@ -6,7 +6,6 @@
   "main": "src/index.ts",
   "private": true,
   "scripts": {
-    "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "exports": {
@@ -27,7 +26,6 @@
     "@mastra/libsql": "workspace:*",
     "@types/node": "22.20.5",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "^4.6.7"
   }
 }

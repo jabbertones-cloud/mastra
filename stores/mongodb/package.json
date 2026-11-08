@@ -24,13 +24,10 @@
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
     "pretest": "docker compose up -d --wait || (echo '--- docker compose up failed; dumping diagnostics ---' && docker compose ps -a && docker compose logs && df -h && exit 1)",
-    "test": "vitest run && pnpm test:fidelity",
     "pretest:fidelity": "docker compose --profile fidelity up -d --wait mongodb-fidelity",
-    "test:fidelity": "MONGODB_REPLICA_SET_URL='mongodb://localhost:27019/?directConnection=true' vitest run src/storage/dataset-fidelity.test.ts src/storage/run-fencing.test.ts",
     "posttest:fidelity": "docker compose --profile fidelity stop mongodb-fidelity",
     "posttest": "docker compose down -v",
     "pretest:watch": "docker compose up -d",
-    "test:watch": "vitest watch",
     "posttest:watch": "docker compose down -v",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
@@ -47,13 +44,11 @@
     "@mastra/core": "workspace:*",
     "@mastra/memory": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "dotenv": "^18.0.9",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.76.0-0 <2.0.0-0"

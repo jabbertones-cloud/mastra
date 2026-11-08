@@ -23,9 +23,7 @@
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
     "pretest": "docker compose up -d --wait",
-    "test": "vitest run",
     "pretest:watch": "docker compose up -d",
-    "test:watch": "vitest watch",
     "posttest:watch": "docker compose down -v",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
@@ -41,12 +39,10 @@
     "@mastra/core": "workspace:*",
     "@types/mssql": "^9.1.11",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.76.0-0 <2.0.0-0"

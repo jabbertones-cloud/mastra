@@ -8,15 +8,11 @@
   "files": [
     "src"
   ],
-  "scripts": {
-    "test": "vitest run"
-  },
+  "scripts": {},
   "devDependencies": {
     "@mastra/core": "workspace:*",
     "@mastra/observability": "workspace:*",
-    "@vitest/coverage-v8": "catalog:",
-    "@vitest/ui": "catalog:",
-    "vitest": "catalog:"
+    "@vitest/ui": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.0.0-0 <2.0.0-0",

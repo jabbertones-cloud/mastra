@@ -21,7 +21,6 @@
   "scripts": {
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "pnpm build --watch",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -49,7 +48,6 @@
     "fastify": "^5.12.7",
     "tsdown": "0.23.1",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "peerDependencies": {

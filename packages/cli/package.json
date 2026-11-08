@@ -25,8 +25,6 @@
     "generate:api-manifest": "pnpm --filter @mastra/server generate:api-cli-route-metadata && pnpm --filter @mastra/factory generate:api-cli-route-metadata",
     "build:lib": "tsdown --silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
     "clean": "rm -rf dist && rm -rf node_modules",
     "typecheck": "tsc --noEmit --incremental",
     "lint": "oxlint --type-aware .",
@@ -86,7 +84,6 @@
     "@types/node": "22.19.15",
     "@types/semver": "^7.8.0",
     "@types/serve-handler": "^6.1.4",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "memfs": "^4.80.0",
     "rollup": "^4.65.0",
@@ -94,7 +91,6 @@
     "tsx": "catalog:",
     "type-fest": "^5.10.0",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "peerDependencies": {

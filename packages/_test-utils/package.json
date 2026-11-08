@@ -33,7 +33,6 @@
   },
   "scripts": {
     "build": "tsdown --config tsdown.config.ts",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -47,11 +46,9 @@
     "@internal/lint": "workspace:*",
     "@internal/llm-recorder": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "homepage": "https://mastra.ai",
   "repository": {

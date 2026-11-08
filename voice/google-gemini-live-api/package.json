@@ -25,8 +25,6 @@
     "build": "tsdown --silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
-    "test": "vitest run",
-    "test:integration": "vitest run tool-args-integration.test.ts events-integration.test.ts",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -44,12 +42,10 @@
     "@internal/voice": "workspace:*",
     "@types/node": "22.19.15",
     "@types/ws": "^8.18.2",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "homepage": "https://mastra.ai",

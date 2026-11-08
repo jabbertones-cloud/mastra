@@ -26,7 +26,6 @@
     "build": "tsdown --silent --config tsdown.config.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
     "pretest": "docker compose up -d --wait",
-    "test": "vitest run",
     "posttest": "docker compose down",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
@@ -44,12 +43,10 @@
     "@mastra/deployer": "workspace:*",
     "@mastra/libsql": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:",
     "zod": "catalog:"
   },
   "peerDependencies": {

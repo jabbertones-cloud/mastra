@@ -25,7 +25,6 @@
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
     "pretest": "docker compose up -d",
-    "test": "vitest run",
     "posttest": "docker compose down",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
@@ -40,14 +39,12 @@
     "@internal/types-builder": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "dotenv": "^18.0.9",
     "ioredis": "^6.0.0",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.76.0-0 <2.0.0-0"

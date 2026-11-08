@@ -1,7 +1,7 @@
 {
   "name": "@mastra/teams",
   "version": "0.1.5-alpha.0",
-  "description": "Microsoft Teams integration for Mastra agents — a ChannelProvider over @chat-adapter/teams with per-agent bot provisioning (Entra + Teams Developer Portal), webhooks, and streaming replies",
+  "description": "Microsoft Teams integration for Mastra agents \u2014 a ChannelProvider over @chat-adapter/teams with per-agent bot provisioning (Entra + Teams Developer Portal), webhooks, and streaming replies",
   "license": "Apache-2.0",
   "type": "module",
   "main": "dist/index.js",
@@ -24,9 +24,7 @@
   "scripts": {
     "build": "tsdown && node scripts/write-cts-shim.mjs",
     "dev": "tsdown --watch",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@chat-adapter/teams": "catalog:"
@@ -36,8 +34,7 @@
     "@types/node": "22.19.15",
     "tsdown": "0.23.1",
     "typescript": "catalog:",
-    "undici": "^8.12.3",
-    "vitest": "^5.1.0"
+    "undici": "^8.12.3"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.22.0 <2.0.0"

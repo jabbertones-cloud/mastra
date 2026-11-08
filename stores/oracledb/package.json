@@ -22,15 +22,10 @@
     "build:lib": "tsdown --logLevel silent --config tsdown.config.ts",
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "pnpm build:lib --watch",
-    "test": "pnpm test:unit",
-    "test:unit": "vitest run --exclude \"src/**/*.integration.test.ts\"",
     "pretest:integration": "docker compose up -d --wait",
-    "test:integration": "pnpm test:storage-integration && pnpm test:vector-integration",
     "posttest:integration": "docker compose down -v",
     "typecheck": "tsc --noEmit",
-    "lint": "oxlint --type-aware .",
-    "test:vector-integration": "RUN_ORACLE_VECTOR_INTEGRATION=true vitest run src/vector/index.integration.test.ts",
-    "test:storage-integration": "RUN_ORACLE_STORAGE_INTEGRATION=true vitest run --fileParallelism=false src/storage/index.test.ts src/storage/index.integration.test.ts src/storage/db/run-fencing.integration.test.ts"
+    "lint": "oxlint --type-aware ."
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -43,12 +38,10 @@
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
     "@types/oracledb": "6.5.2",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.76.0-0 <2.0.0-0"

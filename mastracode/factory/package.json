@@ -1,7 +1,7 @@
 {
   "name": "@mastra/factory",
   "version": "0.28.0-alpha.1",
-  "description": "Mastra Software Factory module: the server core behind the Mastra Software Factory — storage domains, integrations, and surfaces for agent-powered software delivery",
+  "description": "Mastra Software Factory module: the server core behind the Mastra Software Factory \u2014 storage domains, integrations, and surfaces for agent-powered software delivery",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -38,7 +38,6 @@
     "generate:api-cli-route-metadata": "tsx scripts/generate-api-cli-route-metadata.ts",
     "smoke:dist": "node --input-type=module -e \"import('./dist/index.js').then(() => console.log('dist import ok')).catch(e => { console.error(e.message); process.exit(1); })\"",
     "check": "tsc --noEmit",
-    "test": "vitest run",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
   },
@@ -87,8 +86,7 @@
     "@types/node": "22.19.15",
     "msw": "^2.12.11",
     "tsdown": "0.23.1",
-    "typescript": "catalog:ts6",
-    "vitest": "catalog:"
+    "typescript": "catalog:ts6"
   },
   "engines": {
     "node": ">=22.19.0"

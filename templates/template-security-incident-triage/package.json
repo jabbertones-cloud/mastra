@@ -30,7 +30,6 @@
     "format:check": "oxfmt --check .",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
     "runbooks:validate": "node --import tsx scripts/runbooks.ts validate",
     "runbooks:index": "node --env-file-if-exists=.env --import tsx scripts/runbooks.ts index",
     "runbooks:inspect": "node --env-file-if-exists=.env --import tsx scripts/runbooks.ts inspect",
@@ -61,7 +60,6 @@
     "mastra": "latest",
     "typescript": "5.9.3",
     "typescript-eslint": "8.68.0",
-    "vitest": "4.1.11",
     "oxfmt": "0.59.0"
   },
   "overrides": {

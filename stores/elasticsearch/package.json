@@ -24,10 +24,8 @@
     "prepack": "tsx ../../scripts/generate-package-docs.ts",
     "build:watch": "tsdown --watch --silent --config tsdown.config.ts",
     "pretest": "docker compose up -d && (for i in $(seq 1 120); do curl -s http://localhost:9200/_cluster/health | grep -qE '\"status\":\"(green|yellow)\"' && break || (sleep 2; [ $i -eq 120 ] && exit 1); done)",
-    "test": "vitest run",
     "posttest": "docker compose down -v",
     "pretest:watch": "docker compose up -d && (for i in $(seq 1 120); do curl -s http://localhost:9200/_cluster/health | grep -qE '\"status\":\"(green|yellow)\"' && break || (sleep 2; [ $i -eq 120 ] && exit 1); done)",
-    "test:watch": "vitest watch",
     "posttest:watch": "docker compose down -v",
     "lint": "oxlint --type-aware .",
     "lint:fix": "oxlint --type-aware --fix ."
@@ -41,12 +39,10 @@
     "@internal/types-builder": "workspace:*",
     "@mastra/core": "workspace:*",
     "@types/node": "22.19.15",
-    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
     "tsdown": "0.23.1",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "@mastra/core": ">=1.61.0-0 <2.0.0-0"

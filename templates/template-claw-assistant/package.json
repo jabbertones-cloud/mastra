@@ -25,7 +25,6 @@
     "@mastra/loggers": "latest",
     "@mastra/memory": "latest",
     "@mastra/observability": "latest",
-    "playwright": "^1.60.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
